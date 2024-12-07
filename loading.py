@@ -6,8 +6,6 @@ import time  # Para adicionar o delay de "loading"
 clientes_df = pd.read_csv('clientes_com_latitude_longitude.csv')
 clinicas_df = pd.read_csv('clinicas_com_latitude_longitude.csv')
 
-
-
 # Função para salvar os agendamentos no arquivo CSV
 def salvar_agendamento(cliente, clinica, tipo, data, horario):
     agendamento = {
@@ -66,8 +64,6 @@ def escolher_data_horario(cliente, clinica, tipo):
     
     print(f"\nSua consulta foi agendada para {data_escolhida} às {horario_escolhido}.")
     salvar_agendamento(cliente, clinica, tipo, data_escolhida, horario_escolhido)
-    
-    
     
     
 

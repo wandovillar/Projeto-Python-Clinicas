@@ -6,9 +6,6 @@ from dotenv import load_dotenv
 
 
 
-# Carregar variáveis de ambiente (API Key)
-load_dotenv()
-API_KEY = os.getenv('HERE_API_KEY')
 
 # Função para obter latitude e longitude do endereço usando a API Here
 def geocode_address(address):
